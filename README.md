@@ -25,12 +25,18 @@
 
 * **macOS**
     * [macOS Python 環境重建與接管 SOP](./Setup-Guide/macOS/mac-python-clean-install.md) - *移除官方安裝檔，改用 Homebrew 完美管理 Python 3.12+*
+* **Linux**
+    * [Ubuntu 24.04 (ARM64) 安裝 LM Studio 指南](./Setup-Guide/Linux/install-lm-studio-ubuntu-arm64.md) - *解決 ARM 架構相容性問題與 Sandbox 錯誤*
 
 ### ⚙️ 系統維運 (System Admin)
 *伺服器管理、網路設定、MIS 實務操作*
 
 * **macOS**
     * [macOS Hosts 設定與 Proxmox 連線手冊](./System-Admin/macOS/mac-hosts-config.md) - *修改 /etc/hosts 指定內網解析 IP*
+* **Linux**
+    * [Linux 網路基礎：主機識別與名稱解析 (Hostname & DNS)](./System-Admin/Linux/linux-hostname-dns.md)
+    * [Linux 系統管理：SSH 安全連線與金鑰管理](./System-Admin/Linux/linux-ssh-config.md)
+    * [Linux 系統管理：檔案權限與 ACL (Permissions)](./System-Admin/Linux/linux-permissions.md)
 
 ### 🧱 後端開發 (Backend Development)
 *Django, Python, REST API 設計模式*
