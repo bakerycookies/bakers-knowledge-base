@@ -38,6 +38,7 @@
     * [Linux 網路基礎：主機識別與名稱解析 (Hostname & DNS)](./System-Admin/Linux/linux-hostname-dns.md)
     * [Linux 系統管理：SSH 安全連線與金鑰管理](./System-Admin/Linux/linux-ssh-config.md)
     * [Linux 系統管理：檔案權限與 ACL (Permissions)](./System-Admin/Linux/linux-permissions.md)
+    * [Linux 共用目錄權限管理標準作業 (Group & SGID)](./System-Admin/Linux/linux-shared-directory-permissions.md)
     * [Linux 磁碟擴充指南：建立新分割區與自動掛載 (fstab)](./System-Admin/Linux/linux-disk-expansion-mount.md)
 
 ### 🧱 後端開發 (Backend Development)
