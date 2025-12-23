@@ -25,6 +25,7 @@
 
 * **macOS**
     * [macOS Python 環境重建與接管 SOP](./Setup-Guide/macOS/mac-python-clean-install.md) - *移除官方安裝檔，改用 Homebrew 完美管理 Python 3.12+*
+    * [macOS 終端機環境建置 (iTerm2 + Oh My Zsh)](./Setup-Guide/macOS/mac-terminal-setup.md) - *從 Homebrew 到 Zsh Plugins 的完整配置 SOP*
 * **Linux**
     * [Ubuntu 24.04 (ARM64) 安裝 LM Studio 指南](./Setup-Guide/Linux/install-lm-studio-ubuntu-arm64.md) - *解決 ARM 架構相容性問題與 Sandbox 錯誤*
 
