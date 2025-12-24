@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: always
+    environment:
+      - TZ=Asia/Taipei
+      - OLLAMA_KEEP_ALIVE=5m
+      - OLLAMA_MAX_LOADED_MODELS=3
+      - OLLAMA_NUM_PARALLEL=2
+      - OLLAMA_HOST=0.0.0.0
+    networks:
+      ollama-net:
+        ipv4_address: 10.168.89.2
+    volumes:
+      # 資料落地 (請將 <your-dir> 替換為實際路徑)
+      - <your-dir>/ollama/ollama_models:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+
+  nginx-guard:
+    image: nginx:alpine
+    container_name: ollama-nginx
+    restart: always
+    environment:
+      - TZ=Asia/Taipei
+    networks:
+      ollama-net:
+        ipv4_address: 10.168.89.3
+    ports:
+      # 只有 Nginx 負責對外開放 Port
+      - "11434:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - /etc/localtime:/etc/localtime:ro
+
+networks:
+  ollama-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.168.89.0/24

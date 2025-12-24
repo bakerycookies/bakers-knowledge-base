@@ -28,6 +28,7 @@
     * [macOS 終端機環境建置 (iTerm2 + Oh My Zsh)](./Setup-Guide/macOS/mac-terminal-setup.md) - *從 Homebrew 到 Zsh Plugins 的完整配置 SOP*
 * **Linux**
     * [Ubuntu 24.04 (ARM64) 安裝 LM Studio 指南](./Setup-Guide/Linux/install-lm-studio-ubuntu-arm64.md) - *解決 ARM 架構相容性問題與 Sandbox 錯誤*
+    * [DGX Spark: Ollama AI 服務部署 (含 Nginx 資安防護)](./Setup-Guide/Linux/ollama-setup-guide.md) - *從 Docker 安裝到 IP 白名單防護的完整 SOP*
 
 ### ⚙️ 系統維運 (System Admin)
 *伺服器管理、網路設定、MIS 實務操作*
