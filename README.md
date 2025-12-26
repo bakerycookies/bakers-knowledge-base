@@ -23,6 +23,8 @@
 ### 🛠️ 環境建置 (Setup Guide)
 *重灌電腦、建置開發環境的標準作業程序 (SOP)*
 
+* **Git / GitHub**
+    * [Git 專案上傳流程：從本地初始化到 GitHub 遠端部署](./Setup-Guide/Git/git-local-to-github-setup.md) - *將本地專案上傳至 GitHub 的完整 SOP 與狀況排除*
 * **macOS**
     * [macOS Python 環境重建與接管 SOP](./Setup-Guide/macOS/mac-python-clean-install.md) - *移除官方安裝檔，改用 Homebrew 完美管理 Python 3.12+*
     * [macOS 終端機環境建置 (iTerm2 + Oh My Zsh)](./Setup-Guide/macOS/mac-terminal-setup.md) - *從 Homebrew 到 Zsh Plugins 的完整配置 SOP*
