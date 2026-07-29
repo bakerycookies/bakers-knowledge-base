@@ -46,7 +46,8 @@
     * [Linux 共用目錄權限管理標準作業 (Group & SGID)](./System-Admin/Linux/linux-shared-directory-permissions.md)
     * [Linux 磁碟擴充指南：建立新分割區與自動掛載 (fstab)](./System-Admin/Linux/linux-disk-expansion-mount.md)
 * **SSL**
-    * [acme.sh + Cloudflare DNS 申請萬用憑證 (Wildcard Certificate)](./System-Admin/SSL/acme-cloudflare-wildcard-cert.md) - *單次手動申請流程，不含自動續約與 Docker 容器化*
+    * [acme.sh + Cloudflare DNS 申請萬用憑證 (Wildcard Certificate)](./System-Admin/SSL/acme-cloudflare-wildcard-cert.md) - *手動申請 + 自動續約排程（cron）流程，不含 Docker 容器化*
+    * [acme.sh 本機模擬 nginx 自動部署測試](./System-Admin/SSL/acme-local-nginx-deploy-test.md) - *無對外服務時，驗證「續約 → 自動部署 → reload」流程的延伸筆記*
 
 ### 🧱 後端開發 (Backend Development)
 *Django, Python, REST API 設計模式*
