@@ -48,6 +48,7 @@
 * **SSL**
     * [acme.sh + Cloudflare DNS 申請萬用憑證 (Wildcard Certificate)](./System-Admin/SSL/acme-cloudflare-wildcard-cert.md) - *手動申請 + 自動續約排程（cron）流程，不含 Docker 容器化*
     * [acme.sh 本機模擬 nginx 自動部署測試](./System-Admin/SSL/acme-local-nginx-deploy-test.md) - *無對外服務時，驗證「續約 → 自動部署 → reload」流程的延伸筆記*
+    * [Proxmox VE 內建 ACME + Cloudflare DNS-01 憑證設定](./System-Admin/SSL/pve-acme-cloudflare-setup.md) - *PVE 管理介面換發 Let's Encrypt 憑證，含帳號/Challenge Plugin 設定與自動續約*
 
 ### 🧱 後端開發 (Backend Development)
 *Django, Python, REST API 設計模式*
